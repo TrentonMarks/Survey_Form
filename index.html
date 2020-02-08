@@ -14,22 +14,22 @@
             <!-- Survey Form -->
             <form id="survey-form" action="index.html" method="post">
                 <!-- Name Text Input -->
-                <label for="name">Name</label><br>
+                <label for="name" id=name-label>Name</label><br>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
 
                 <!-- Email Text Input -->
-                <label for="email">Email</label><br>
+                <label for="email" id="email-label">Email</label><br>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
 
                 <!-- Age Text Input -->
-                <label for="age">Age (Optional)</label><br>
-                <input type="number" id="age" name="age" placeholder="Enter your age"><br>
+                <label for="number" id="number-label">Age (Optional)</label><br>
+                <input type="number" id="number" name="age" placeholder="Enter your age" min="0" max="99"><br>
 
                 <!-- Current Role Dropdown Input -->
-                <label for="current-role">Which option best defines your current role?</label><br>
-                <select id="current-role" name="current-role" required>
+                <label for="dropdown">Which option best defines your current role?</label><br>
+                <select id="dropdown" name="current-role" required>
                     <optgroup label="Select current role">
-                        <option value="" selected disabled hidden>Select current role</option>
+                        <option  id="dropdown" value="" selected disabled hidden>Select current role</option>
                         <option value="student">Student</option>
                         <option value="full time job">Full Time Job</option>
                         <option value="full time learner">Full Time Learner</option>
@@ -64,46 +64,46 @@
 
                 <!-- What Would You Improve Checkbox Input -->
                 <p>What would you like to see improved? (Check all that apply)</p>
-
-                <input type="checkbox" id="improvement-1" name="improvement-choice"/>
+                    <!-- Front-end Projects Checkbox -->
+                <input type="checkbox" id="improvement-1" value="improvement-choice"/>
                 <label for="improvement-1">Front-end Projects</label><br>
-
-                <input type="checkbox" id="improvement-2" name="improvement-choice"/>
+                    <!-- Back-end Projects Checkbox -->
+                <input type="checkbox" id="improvement-2" value="improvement-choice"/>
                 <label for="improvement-2">Back-end Projects</label><br>
-
-                <input type="checkbox" id="improvement-3" name="improvement-choice"/>
+                    <!-- Data Visualization Checkbox -->
+                <input type="checkbox" id="improvement-3" value="improvement-choice"/>
                 <label for="improvement-3">Data Visualization</label><br>
-
-                <input type="checkbox" id="improvement-4" name="improvement-choice"/>
+                    <!-- Challenges Checkbox -->
+                <input type="checkbox" id="improvement-4" value="improvement-choice"/>
                 <label for="improvement-4">Challenges</label><br>
-
-                <input type="checkbox" id="improvement-5" name="improvement-choice"/>
+                    <!-- Open Source Community Checkbox -->
+                <input type="checkbox" id="improvement-5" value="improvement-choice"/>
                 <label for="improvement-5">Open Source Community</label><br>
-
-                <input type="checkbox" id="improvement-6" name="improvement-choice"/>
+                    <!-- Gitter Help Rooms Checkbox -->
+                <input type="checkbox" id="improvement-6" value="improvement-choice"/>
                 <label for="improvement-6">Gitter Help Rooms</label><br>
-
-                <input type="checkbox" id="improvement-7" name="improvement-choice"/>
+                    <!-- Videos Checkbox -->
+                <input type="checkbox" id="improvement-7" value="improvement-choice"/>
                 <label for="improvement-7">Videos</label><br>
-
-                <input type="checkbox" id="improvement-8" name="improvement-choice"/>
+                    <!-- City Meetups Checkbox -->
+                <input type="checkbox" id="improvement-8" value="improvement-choice"/>
                 <label for="improvement-8">City Meetups</label><br>
-
-                <input type="checkbox" id="improvement-9" name="improvement-choice"/>
+                    <!-- Wiki Checkbox -->
+                <input type="checkbox" id="improvement-9" value="improvement-choice"/>
                 <label for="improvement-9">Wiki</label><br>
-
-                <input type="checkbox" id="improvement-10" name="improvement-choice"/>
+                    <!-- Forums Checkbox -->
+                <input type="checkbox" id="improvement-10" value="improvement-choice"/>
                 <label for="improvement-10">Forum</label><br>
-
-                <input type="checkbox" id="improvement-11" name="improvement-choice"/>
+                    <!-- Additional Courses Checkbox -->
+                <input type="checkbox" id="improvement-11" value="improvement-choice"/>
                 <label for="improvement-11">Additional Courses</label><br>
-
+                
                 <!-- Comments / Suggestions Textarea -->
                 <label for="">Any comments or suggestions? (Optional)</label><br>
-                <textarea name="name" rows="8" cols="80"></textarea><br>
+                <textarea name="name" rows="4" cols="80"></textarea><br>
 
                 <!-- Submit Button -->
-                <input type="submit" name="submit" value="Submit">
+                <button type="submit" id="submit" name="submit-button">Submit</button>
             </form>
         </main>
     </body>
