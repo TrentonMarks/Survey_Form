@@ -115,3 +115,27 @@ input[type=checkbox] {
 #improvement-11 {
     margin-bottom: 25px;
 }
+
+@media (max-width: 1200px) {
+    form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1000px) {
+    form {
+        width: 60%;
+    }
+}
+
+@media (max-width: 800px) {
+    form {
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 80%;
+    }
+}
